@@ -146,20 +146,18 @@ namespace MetroHomework
             var c26empty = new FBCategory { Label = "" };
 
 
-
-
-
-
-
-
+            
             var model = new List<FBCategory>
     {c1,c1empty,c3,c3empty,c2,c2empty,c4,c4empty,c5,c5empty,c6,c6empty,c7,c7empty,c8,c8empty,c9,c9empty,c10,c10empty,c11,c11empty,c12,c12empty,c13,c13empty,c14,c14empty,c15,c15empty,c16,c16empty,c17,c17empty,c18,c18empty,c19,c19empty,c20,c21empty,c22,c22empty,c23,c23empty,c24,c24empty,c25,c25empty,c26,c26empty};
 
             
 
             fdiag.Title = "Замоскворецкая линия";
+            
+            //немного магической магии
             fdiag.LabelPath = "Label";
             fdiag.CausesPath = "Causes";
+
             fdiag.ItemsSource = model;
 
             fdiag.StemStroke = Brushes.Red;
@@ -180,7 +178,6 @@ namespace MetroHomework
             public string Label { get; set; }
             public List<string> Causes { get; set; }
         }
-
 
     }
 }
